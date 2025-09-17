@@ -4,6 +4,14 @@ function x() {
 
 document.writeln(`<p> ${x()} </p>`)
 
+function z(input) {
+    for (let i = 0; i < 5; i++) {
+        document.writeln(`<p> ${input} </p>`)
+    }
+}
+
+z('x')
+
 async function asinc() {
     return "async request"
 }
@@ -22,7 +30,7 @@ async function dog() {
 
 dog()
 
-function yol(): boolean {
+function yol() {
     for (let i = 1; i < 10; i++) {
         for (let k = 1; k < 10; k++) {
             if (k != i) console.log(`(${i},${k})`)  
