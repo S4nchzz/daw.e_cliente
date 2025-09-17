@@ -41,3 +41,20 @@ function yol() {
 }
 
 yol()
+
+let timesWritten = 0
+function butmove() {
+    var add = document.getElementById('add')
+    var clear = document.getElementById('clear')
+
+    const p = document.getElementById('numberClick')
+    add.addEventListener('click', () => { 
+        p.textContent = `Number of clicks: ${++timesWritten}`
+    }, false)
+
+    clear.addEventListener('click', () => {
+        p.textContent = `Number of clicks: ${timesWritten = 0}`
+    })
+}
+
+butmove()
