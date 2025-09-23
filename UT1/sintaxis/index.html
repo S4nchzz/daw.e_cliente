@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sintaxis</title>
+</head>
+<body>
+    <script>
+        function askNote() {
+            let nombre;
+            let nota;
+
+            nombre = prompt('Escriba su nombre: ')
+            nota = prompt('Introduzca una nota: ')
+
+            nota >= 5
+                ? nota > 10
+                    ? alert('Nota invalida')
+                    : alert('Has aprobado')
+                : nota < 0
+                    ? alert('Nota invalida')
+                    : alert('Has suspendido')
+        }
+
+        askNote()
+        
+
+    </script>
+</body>
+</html>
